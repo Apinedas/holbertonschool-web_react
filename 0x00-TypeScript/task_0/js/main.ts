@@ -35,3 +35,5 @@ for (const student of studentList) {
         <td>${student.location}</td>`
     studentsTable.appendChild(studentRow);
 }
+
+document.body.appendChild(studentsTable);
