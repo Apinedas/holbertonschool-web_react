@@ -1,6 +1,7 @@
 import $ from "jquery"
 import _ from "lodash"
 import "../css/main.css"
+import "../assets/holberton-logo.jpg"
 
 $("body").append(`
     <p>Holberton Dashboard</p>
@@ -23,7 +24,3 @@ function updateCounter() {
 $("button").on("click", _.debounce(updateCounter, 500));
 
 $("body").prepend(`<div id=logo></div>`);
-$("#logo").css("width", "200px")
-$("#logo").css("height", "200px")
-$("#logo").css("background-image", "url(../assets/holberton-logo.jpg)")
-$("#logo").css("background-size", "200px")
