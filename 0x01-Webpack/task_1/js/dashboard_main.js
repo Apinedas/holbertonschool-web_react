@@ -19,7 +19,4 @@ function updateCounter() {
     $("#count").append(count);
 }
 
-$("button").on("click", _.debounce(updateCounter, 500, {
-    'leading': true,
-    'trailing': true
-}));
+$("button").on("click", _.debounce(updateCounter, 500));
