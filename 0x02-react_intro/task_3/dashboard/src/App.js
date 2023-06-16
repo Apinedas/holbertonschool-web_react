@@ -2,7 +2,7 @@ import hbtn_logo from './holberton-logo.jpg';
 import { getFullYear, getFooterCopy } from './utils';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <>
       <div className='App-header'>
@@ -23,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;
