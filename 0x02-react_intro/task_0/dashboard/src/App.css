@@ -1,0 +1,27 @@
+#root {
+  font-family: 'Calibri';
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2.5px red solid;
+}
+
+.App-header h1 {
+  color: red;
+}
+
+.App-body {
+  margin: 2.5rem;
+  font-size: large;
+  height: 25rem;
+}
+
+.App-footer {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  border-top: 2.5px red solid;
+}
