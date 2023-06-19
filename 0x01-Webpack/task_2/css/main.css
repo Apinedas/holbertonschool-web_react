@@ -1,4 +1,13 @@
 #count {
     font-weight: bold;
-    position: relative;
+}
+
+button {
+    float: left;
+    margin-right: 2px;
+}
+
+img {
+    background: url('../assets/holberton-logo.jpg');
+    background-size: 200px 200px;
 }
