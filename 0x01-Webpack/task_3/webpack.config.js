@@ -8,7 +8,7 @@ module.exports = {
             title: "Webpack Output",
         }),
     ],
-    entry: ['./header/header.js', './body/body.js', './footer/footer.js'],
+    entry: ['./modules/header/header.js', './modules/body/body.js', './modules/footer/footer.js'],
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'public')
