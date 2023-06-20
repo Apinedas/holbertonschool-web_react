@@ -8,6 +8,7 @@ module.exports = {
       title: "Development",
     }),
   ],
+  devtool: 'inline-source-map',
   entry: {
     main: path.resolve(__dirname, '../src/app.js'),
   },
