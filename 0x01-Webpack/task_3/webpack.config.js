@@ -1,12 +1,14 @@
 // Webpack config file for task_1
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Webpack Output",
+            title: "Webpack Holberton Project",
         }),
+        new CleanWebpackPlugin(),
     ],
     entry: ['./modules/header/header.js', './modules/body/body.js', './modules/footer/footer.js'],
     output: {
@@ -30,4 +32,5 @@ module.exports = {
             }
         ]
     },
+    devtool: "inline-source-map"
 };
