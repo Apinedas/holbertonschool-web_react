@@ -9,6 +9,9 @@ module.exports = {
     }),
   ],
   devtool: 'inline-source-map',
+  devServer: {
+    hot: true
+  },
   entry: {
     main: path.resolve(__dirname, '../src/app.js'),
   },
