@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid red;
+}
+
+img {
+    background: url('../assets/holberton-logo.jpg');
+    background-size: 200px 200px;
+}
+
+h1 {
+    color: red;
+}

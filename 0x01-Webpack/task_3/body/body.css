@@ -1,0 +1,15 @@
+#count {
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+button {
+    width: auto;
+    height: 100%;
+}
