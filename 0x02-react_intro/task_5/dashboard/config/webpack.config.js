@@ -13,7 +13,7 @@ module.exports = {
     hot: true
   },
   entry: {
-    main: path.resolve(__dirname, '../src/app.js'),
+    main: path.resolve(__dirname, '../src/index.js'),
   },
   output: {
     filename: 'bundle.js',
@@ -25,6 +25,29 @@ module.exports = {
         test: /\.css$/, 
         use: ["style-loader", "css-loader"] 
       },
+      {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      }
     ]
   },
 };
