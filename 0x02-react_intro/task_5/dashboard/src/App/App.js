@@ -1,5 +1,5 @@
-import hbtn_logo from './holberton-logo.jpg';
-import { getFullYear, getFooterCopy } from './utils';
+import hbtn_logo from '../assets/holberton-logo.jpg';
+import { getFullYear, getFooterCopy } from '../utils/utils';
 import './App.css';
 
 export default function App() {
