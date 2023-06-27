@@ -1,9 +1,4 @@
-/**
- * @jest-environment jsdom
- */
-
 import { render, screen } from '@testing-library/react'
-import '@testing-library/jest-dom'
 import Notifications from './Notifications'
 
 test("Notifications renders right, and contains expected items.", () => {

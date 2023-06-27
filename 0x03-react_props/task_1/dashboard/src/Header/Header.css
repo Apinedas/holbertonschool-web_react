@@ -1,0 +1,10 @@
+.App-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2.5px red solid;
+}
+
+.App-header h1 {
+    color: red;
+}
