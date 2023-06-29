@@ -13,7 +13,7 @@ test("Notifications renders right, and contains expected items with displayDrawe
 test("Notifications renders right, and contains expected items without displayDrawer.", () => {
     const { container } = render(<Notifications />);
     const list = container.getElementsByTagName("li");
-    const expectedElement = screen.getByText("Here is the list of notifications");
+    const expectedElement = container.querySelector("ul");
     expect(list.length).toBe(0);
     expect(expectedElement).toBeNull();
 })

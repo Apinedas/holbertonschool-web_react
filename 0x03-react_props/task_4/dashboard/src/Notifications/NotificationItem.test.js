@@ -18,7 +18,7 @@ describe("NotificationItem", () => {
   });
 
   test("renders correct HTML when html prop is passed", () => {
-    const { getByText } = render(<NotificationItem html={"<b>test</b>"} />);
+    const { getByText } = render(<NotificationItem html={{__html: "<b>test</b>"}} />);
     const listItemElement = getByText("test");
     expect(listItemElement).toBeInTheDocument();
     expect(listItemElement.nodeName).toBe('B');

@@ -1,8 +1,16 @@
 .Notifications {
-    position: relative;
     border: 1px red dashed;
     padding: 0.5rem;
     margin: 2%;
+}
+
+.NotificationSection {
+    width: 30%;
+    float: right;
+}
+
+.menuItem {
+    text-align: end;
 }
 
 [data-notification-type="default"] {

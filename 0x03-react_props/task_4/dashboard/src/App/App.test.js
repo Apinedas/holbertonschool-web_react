@@ -24,7 +24,7 @@ describe('Main App renders with all components on login', () => {
 
     it('App has expected elements', () => {
         const { container } = render(<App isLoggedIn={true} />);
-        expect(container.getElementsByClassName('Notifications').length).toBe(1);
+        expect(container.getElementsByClassName('menuItem').length).toBe(1);
         expect(container.getElementsByClassName('App-header').length).toBe(1);
         expect(container.getElementsByClassName('App-body').length).toBe(0);
         expect(container.getElementsByClassName('App-footer').length).toBe(1);
