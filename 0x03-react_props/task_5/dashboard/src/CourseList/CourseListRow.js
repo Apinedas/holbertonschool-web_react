@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class CLRow extends React.Component {
+export default class CourseListRow extends React.Component {
     static propTypes = {
         isHeader: PropTypes.bool,
         textFirstCell: PropTypes.string.isRequired,
-        textSecondCell: PropTypes.string
+        textSecondCell: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.number
+        ])
     }
 
     static defaultProps = {
@@ -36,10 +39,4 @@ class CLRow extends React.Component {
             </tr>
         )
     }
-}
-
-export default function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
-    return (
-        <CLRow isHeader={isHeader} textFirstCell={textFirstCell} textSecondCell={textSecondCell} />
-    )
 }
