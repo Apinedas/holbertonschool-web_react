@@ -21,6 +21,13 @@ export default class Notifications extends React.Component {
         listNotifications: []
     }
 
+    shouldComponentUpdate(nextProps) {
+        if (nextProps.listNotifications.length > this.props.listNotifications.length) {
+            return true;
+        }
+        return false;
+    }
+
     markAsRead(id) {
         console.log(`Notification ${id} has been marked as read`);
     }
