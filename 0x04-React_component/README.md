@@ -1,1 +1,1 @@
-# 0X03 - React props
+# 0X04 - React component
